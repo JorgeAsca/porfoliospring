@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.jorge</groupId>
-	<artifactId>businessandnetworks</artifactId>
+	<artifactId>porfoliospring</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>businessandnetworks</name>
+	<name>porfoliospring</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
@@ -30,10 +30,6 @@
 		<java.version>23</java.version>
 	</properties>
 	<dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-jpa</artifactId>
-		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-thymeleaf</artifactId>
@@ -65,12 +61,6 @@
 			<artifactId>jquery</artifactId>
 			<version>3.7.1</version>
 		</dependency>
-		<!-- <dependency>
-			<groupId>org.webjars.bower</groupId>
-			<artifactId>materialize</artifactId>
-			<version>1.0.0-rc.2</version>
-		</dependency> -->
-		
 
 		<!-- https://mvnrepository.com/artifact/org.webjars/bootstrap -->
 		<dependency>
