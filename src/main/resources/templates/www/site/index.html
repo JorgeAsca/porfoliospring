@@ -3,16 +3,38 @@
   
     <div layout:fragment="MainBase">
         <!-- Contenido principal -->
-        <div class="container">
-            <section id="index" class="bg-primary text-white text-center py-5">
-                <h2>Jorge Asca </h2>
-                <p>Desarrollador web</p>
-                
-                <div class="mt-4">
-                    <a href="/about" class="btn btn-light btn-lg">Continuar al cv</a>
+        <section layout:fragment="content">
+            <div class="hero-section d-flex align-items-center text-center text-white"
+                 style="background: url('./imagenes/grunge-black-concrete-textured-background.jpg') center/cover no-repeat; height: 100vh;">
+                <div class="container">
+                    <img src="./imagenes/WhatsApp Image 2025-03-05 at 06.34.53.jpeg" class="rounded-circle mb-3" alt="Jorge Asca" width="150">
+                    <h1 class="display-3 fw-bold">Jorge Asca</h1>
+                    <p class="lead">Desarrollador Web | Full Stack</p>
+                    <a href="#curriculum" class="btn btn-primary btn-lg mt-3"><i class="fas fa-file-alt"></i> Más sobre mi</a>
+                </div>
+            </div>
+        
+            <!-- Sección de Sobre Mí -->
+            <section class="container my-5">
+                <h2 class="text-center">Sobre Mí</h2>
+                <p class="text-center">Soy un apasionado desarrollador web con experiencia en tecnologías modernas.</p>
+            </section>
+        
+            <!-- Sección de Currículum -->
+            <section id="curriculum" class="py-5 bg-light">
+                <div class="container">
+                    <h2 class="text-center">Currículum</h2>
+                    <p class="text-center">Experiencia y educación.</p>
                 </div>
             </section>
-        </div>
-    </div>
+        
+            <!-- Sección de Contacto -->
+            <section id="contacto" class="py-5">
+                <div class="container">
+                    <h2 class="text-center">Contacto</h2>
+                    <p class="text-center">¡Hablemos sobre tu próximo proyecto!</p>
+                </div>
+            </section>
+        </section>
 
 </html>

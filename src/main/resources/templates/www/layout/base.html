@@ -6,6 +6,7 @@
     <title th:text="'Inicio - ' + ${titulo}">Página de Inicio</title>
     <!-- Vincular con Bootstrap 5.3.3 -->
     <link rel="stylesheet" href="/webjars/bootstrap/5.3.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/estilos.css">
 </head>
 <body>
 
@@ -20,15 +21,11 @@
     </main>
 
     <!-- Footer -->
-    <footer th:fragment="footer" class="bg-dark text-white text-center py-3">
-        <div class="container">
-            <p>&copy; 2025 Jorge Andres Asca</p>
-            <p>Mejoras temporales al Porfolio</p>
-        </div>
-    </footer>
+    <footer th:replace="~{www/layout/componets/footer :: footer}"></footer>
 
     <!-- Scripts -->
     <script src="/webjars/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/navbar.js"></script>
 
 </body>
 </html>
