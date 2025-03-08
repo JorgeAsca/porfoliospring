@@ -13,3 +13,21 @@ document.addEventListener("DOMContentLoaded", function () {
         prevScrollPos = currentScrollPos;
     });
 });
+
+// footer js para mostrar el footer cuando se llega al final de la página
+
+document.addEventListener("DOMContentLoaded", function () {
+    let footer = document.querySelector("footer");
+
+    function checkScroll() {
+        let footerPosition = footer.getBoundingClientRect().top;
+        let screenHeight = window.innerHeight;
+
+        if (footerPosition < screenHeight) {
+            footer.classList.add("show-footer");
+        }
+    }
+
+    window.addEventListener("scroll", checkScroll);
+    checkScroll(); // Para verificar si ya está visible al cargar la página
+});

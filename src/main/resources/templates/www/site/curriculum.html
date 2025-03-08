@@ -1,12 +1,17 @@
-<!DOCTYPE html>
-<html lang="es" xmlns:th="http://www.thymeleaf.org">
-<head>
-    <title th:text="${title}">Curriculum</title>
-</head>
-<body>
-    <div th:fragment="content">
-        <h1>Mi Curriculum</h1>
-        <p>Información sobre mi experiencia y habilidades.</p>
-    </div>
-</body>
+<html xmlns:th="http://www.thymeleaf.org"
+      layout:decorate="~{/www/layout/base}">
+  
+    <div layout:fragment="MainBase">
+        <section layout:fragment="content">
+            <div class="hero-section d-flex align-items-center text-center text-white"
+                 style="background: url('./imagenes/grunge-black-concrete-textured-background.jpg') center/cover no-repeat; height: 100vh;">
+                <div class="container">
+                    <img src="./imagenes/WhatsApp Image 2025-03-05 at 06.34.53.jpeg" class="rounded-circle mb-3" alt="Jorge Asca" width="150">
+                    <h1 class="display-3 fw-bold">Jorge Asca</h1>
+                    <p class="lead">Desarrollador Web | Full Stack</p>
+                    <a href="#curriculum" class="btn btn-primary btn-lg mt-3"><i class="fas fa-file-alt"></i> Más sobre mi</a>
+                </div>
+            </div>
+        
+
 </html>
