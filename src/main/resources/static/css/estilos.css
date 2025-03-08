@@ -28,4 +28,11 @@ footer.show-footer {
   transform: translateY(0);
 }
 
+/* Efecto de desplazamiento */
+
+.card-body:hover {
+  transform: translateY(-10px);
+  transition: transform 0.3s ease-in-out;
+}
+
 
