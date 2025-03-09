@@ -5,7 +5,7 @@ public class FormularioC {
     private String email;
     private String mensaje;
 
-    public FormularioC() {} // Constructor vacío requerido por Spring
+    public FormularioC() {}
 
     public FormularioC(String nombre, String email, String mensaje) {
         this.nombre = nombre;
@@ -13,7 +13,7 @@ public class FormularioC {
         this.mensaje = mensaje;
     }
 
-    // Getters y Setters
+
     public String getNombre() { return nombre; }
     public void setNombre(String nombre) { this.nombre = nombre; }
 
