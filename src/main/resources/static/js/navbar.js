@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (prevScrollPos > currentScrollPos) {
             navbar.style.top = "0"; // Muestra la navbar
         } else {
-            navbar.style.top = "-80px"; // Oculta la navbar (ajusta la altura si es necesario)
+            navbar.style.top = "-80px"; // Oculta la navbar 
         }
         prevScrollPos = currentScrollPos;
     });

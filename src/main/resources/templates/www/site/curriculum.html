@@ -1,17 +1,64 @@
 <html xmlns:th="http://www.thymeleaf.org"
       layout:decorate="~{/www/layout/base}">
   
-    <div layout:fragment="MainBase">
-        <section layout:fragment="content">
-            <div class="hero-section d-flex align-items-center text-center text-white"
-                 style="background: url('./imagenes/grunge-black-concrete-textured-background.jpg') center/cover no-repeat; height: 100vh;">
-                <div class="container">
-                    <img src="./imagenes/WhatsApp Image 2025-03-05 at 06.34.53.jpeg" class="rounded-circle mb-3" alt="Jorge Asca" width="150">
-                    <h1 class="display-3 fw-bold">Jorge Asca</h1>
-                    <p class="lead">Desarrollador Web | Full Stack</p>
-                    <a href="#curriculum" class="btn btn-primary btn-lg mt-3"><i class="fas fa-file-alt"></i> Más sobre mi</a>
+      <body>
+        <section layout:fragment="MainBase" class="py-5">
+            <div class="container">
+                <h2 class="text-center fw-bold mb-4">Currículum</h2>
+                <div class="row">
+                    <!-- Experiencia -->
+                    <div class="col-md-4">
+                        <div class="card shadow-lg p-4">
+                            <h3 class="fw-bold">Experiencia</h3>
+                            <div class="bg-light p-3 rounded shadow-sm mb-3">
+                                <h5 class="fw-bold">Asistente de Gestión - Empresa VALEGHER</h5>
+                                <p class="text-muted">(01/24 - 08/24)</p>
+                                <p>Encargado de la página principal de la empresa, manejo de personal y emisión de facturas.</p>
+                            </div>
+                            <div class="bg-light p-3 rounded shadow-sm">
+                                <h5 class="fw-bold">Cocinero/Parrillero - LOS AMIGOS DE MACA</h5>
+                                <p class="text-muted">(2021 - 2023)</p>
+                                <p>Encargado del local principal de la sede.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Estudios -->
+                    <div class="col-md-4">
+                        <div class="card shadow-lg p-4">
+                            <h3 class="fw-bold">Estudios</h3>
+                            <div class="bg-light p-3 rounded shadow-sm mb-3">
+                                <h5 class="fw-bold">Formación Profesional Desarrollo Web</h5>
+                                <p class="text-muted">I.E.S Cura Valera (2024 - Presente)</p>
+                            </div>
+                            <div class="bg-light p-3 rounded shadow-sm">
+                                <h5 class="fw-bold">Derecho</h5>
+                                <p class="text-muted">Universidad Tecnológica del Perú (2020 - 2021)</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Habilidades -->
+                    <div class="col-md-4">
+                        <div class="card shadow-lg p-4">
+                            <h3 class="fw-bold">Habilidades</h3>
+                            <p class="fw-bold">Asertivo</p>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 75%;"></div>
+                            </div>
+                            <p class="fw-bold">Proactivo</p>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 85%;"></div>
+                            </div>
+                            <p class="fw-bold">Compromiso</p>
+                            <div class="progress">
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        
+        </section>
+    </body>
 
 </html>
