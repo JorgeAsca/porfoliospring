@@ -36,7 +36,7 @@ public class ContactoController {
 
         model.addAttribute("mensajeExito", "Mensaje enviado correctamente");
 
-        return "templates/www/site/contacto"; 
+        return "www/site/contacto"; 
     }
 
 }
