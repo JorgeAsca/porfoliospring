@@ -22,6 +22,7 @@ public class PorfolioController {
         model.addAttribute("title", "Curriculum");
         return "www/site/curriculum";
     }
+    
 
     @GetMapping("/contacto")
     public String contacto(Model model) {
